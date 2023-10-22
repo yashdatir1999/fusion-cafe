@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    /* height: 8%; */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.918);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    display: flex;
+    transform: translate(20px);
+    font-size: 20px;
+    }
+.logo >h1{
+    font-family: 'Yellowtail', cursive;
+    color: white;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    transform: translate(50px);
+    font-size: 18px;
+    color: rgb(185, 181, 181);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+}
+li:hover{
+    color: white;
+    text-decoration: underline;
+}
+.search{
+    color: rgb(185, 181, 181);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.search >i:hover{
+    color: white;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 5px white;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    transform: translate(-10px) ;
+    
+}
+button:hover{
+    /* background-color: red; */
+    scale: 0.9;
+}
+.cont{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=726&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+}
+.image{
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1{
+    /* border: 5px solid white; */
+    height: 55%;
+    width: 15%;  
+    transform: translateX(-20px);
+    transform: skewY(2deg); 
+    background-image: url(https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    transition: all ease 1s;
+    border-radius: 5px;
+
+}
+.img1:hover{
+    transform: rotate(-5deg) scale(1.2);
+    transform-origin: right bottom;
+    box-shadow: 0 0 20px white;
+    backdrop-filter: blur(10px);
+}
+.img2{
+    height: 60%;
+    width: 15%;
+    transform: skewY(2deg); 
+    background-image: url(https://images.unsplash.com/photo-1517741991040-91338b176129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    transition: all ease 1s;
+    border-radius: 5px;
+
+}
+.img2:hover{
+    transform: rotate(-5deg) scale(1.2);
+    transform-origin: right bottom;
+    box-shadow: 0 0 20px white;
+    backdrop-filter: blur(10px);
+}
+.img3{
+    height: 66%;
+    width: 20%;
+    background-image: url(https://images.unsplash.com/photo-1614145121029-83a9f7b68bf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    transition: all ease 1s;
+    border-radius: 5px;
+}
+.img3:hover{
+    box-shadow: 0 0 20px white;
+    backdrop-filter: blur(10px);
+}
+.img4{
+    height: 60%;
+    width: 15%;
+    transform: skewY(-2deg); 
+    background-image: url(https://images.unsplash.com/photo-1579008840349-a7253c71a754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=456&q=80);
+    transition: all ease 1s;
+    border-radius: 5px;
+
+}
+.img4:hover{
+    transform: rotate(5deg) scale(1.2);
+    transform-origin: left bottom;
+    box-shadow: 0 0 20px white;
+    backdrop-filter: blur(10px);
+}
+.img5{
+    height: 55%;
+    width: 15%;  
+    transform: translateX(20px);
+    transform: skewY(-2deg);
+    background-image: url(https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=481&q=80); 
+    transition: all ease 1s;
+    border-radius: 5px;
+}
+.img5:hover{
+    transform: rotate(5deg) scale(1.2);
+    transform-origin: bottom left;
+    box-shadow: 0 0 20px white;
+    backdrop-filter: blur(10px);
+}
+.overwords{
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+
+}
+.overwords >h1,h3{
+    color:white;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+    transform: translateY(100px);
+    font-family: 'Kalam', cursive;
+    line-height: 25px;
+}
+.overwords:hover{
+    transform: scale(1.2);
+}
